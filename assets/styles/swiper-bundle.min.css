@@ -278,7 +278,7 @@
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 10px;
+    bottom: 0px;
     left: 0;
     width:100%
 }
@@ -345,7 +345,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
     opacity: var(--swiper-pagination-bullet-opacity, 1);
-    background:var(--swiper-pagination-color, var(--swiper-theme-color))
+    background: hsl(142, 69%, 61%)
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets {
@@ -672,3 +672,23 @@ button.swiper-pagination-bullet {
     overflow: hidden
 }
 
+.swiper-button-prev::after, .swiper-button-next::after{
+    content: "";
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    /* color:; */
+}
+
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
+
+.swiper-pagination-prev, .swiper-pagination-next, .swiper-pagination-bullet{
+    outline: none;
+}
