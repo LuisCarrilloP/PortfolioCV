@@ -172,5 +172,11 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
             
-            
+            /*_______ SEND MAIL THROUGH FORM______ */
+function SendMail(){
+    let body = document.getElementById("Message").value
+    let subjectLine = document.getElementById("Subject").value
+    let nameInterested = document.getElementById("Name").value
+    window.location.href = "mailto:jl.carrillopadron@gmail.com?subject="+subjectLine+"&body="+body+"__"+nameInterested
+}
 
