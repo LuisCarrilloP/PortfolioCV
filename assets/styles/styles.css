@@ -190,6 +190,12 @@ img{
     color: var(--first-color);
 }
 
+.nav__logo-font{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+}
+
 .nav__toggle{
     font-size: 1.1rem;
     cursor: pointer
